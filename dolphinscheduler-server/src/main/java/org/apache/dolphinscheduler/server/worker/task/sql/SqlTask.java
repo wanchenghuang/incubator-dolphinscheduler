@@ -270,7 +270,7 @@ public class SqlTask extends AbstractTask {
         logger.debug("execute sql : {}", JSONObject.toJSONString(resultJSONArray, SerializerFeature.WriteMapNullValue));
 
         // if there is a result set
-        if (!resultJSONArray.isEmpty() ) {
+        /*if (!resultJSONArray.isEmpty() ) {
             if (StringUtils.isNotEmpty(sqlParameters.getTitle())) {
                 sendAttachment(sqlParameters.getTitle(),
                         JSONObject.toJSONString(resultJSONArray, SerializerFeature.WriteMapNullValue));
@@ -278,7 +278,7 @@ public class SqlTask extends AbstractTask {
                 sendAttachment(taskExecutionContext.getTaskName() + " query resultsets ",
                         JSONObject.toJSONString(resultJSONArray, SerializerFeature.WriteMapNullValue));
             }
-        }
+        }*/
     }
 
     /**
